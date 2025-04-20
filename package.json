@@ -5,6 +5,10 @@
     "apps/*",
     "packages/*"
   ],
+  "scripts": {
+    "cmd:build": "node scripts/cmd.js --build",
+    "cmd:dev": "node scripts/cmd.js --dev"
+  },
   "devDependencies": {
     "@ntnyq/eslint-config": "^4.0.4",
     "parcel": "^2.14.4",

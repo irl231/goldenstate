@@ -1,8 +1,8 @@
-const { obfuscate } = require('js-confuser')
+const { obfuscate } = require("js-confuser");
 
-async function jsConfuser(code = '', isBrowser = false) {
+async function jsConfuser(code = "", isBrowser = false) {
   return await obfuscate(code, {
-    target: isBrowser ? 'browser' : 'node',
+    target: isBrowser ? "browser" : "node",
     minify: true,
     compact: true,
     flatten: true,
@@ -14,7 +14,7 @@ async function jsConfuser(code = '', isBrowser = false) {
     stringCompression: false,
     stringEncoding: false,
 
-    identifierGenerator: 'randomized',
+    identifierGenerator: "randomized",
     duplicateLiteralsRemoval: true,
     objectExtraction: true,
     renameVariables: true,
@@ -37,8 +37,8 @@ async function jsConfuser(code = '', isBrowser = false) {
       antiDebug: true,
     },
   })
-    .then(result => result.code)
-    .catch(() => code)
+    .then((result) => result.code)
+    .catch(() => code);
 }
 
-module.exports = { jsConfuser }
+module.exports = { jsConfuser };

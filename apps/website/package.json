@@ -1,7 +1,7 @@
 {
+  "name": "@goldenstate/website",
   "type": "module",
   "sideEffects": true,
-  "name": "@goldenstate/website",
   "scripts": {},
   "dependencies": {
     "react": "^19.1.0",
