@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@ntnyq/eslint-config": "^4.0.4",
+    "parcel": "^2.14.4",
+    "serve": "^14.2.4",
+    "zx": "^8.5.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "javascript-obfuscator",
+      "lmdb",
+      "msgpackr-extract",
+      "unrs-resolver"
+    ]
+  }
+}

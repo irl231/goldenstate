@@ -1,0 +1,12 @@
+{
+  "type": "commonjs",
+  "name": "@goldenstate/parcel-optimizer-obfuscator",
+  "main": "src/index.js",
+  "dependencies": {
+    "javascript-obfuscator": "^4.1.1",
+    "js-confuser": "^2.0.0"
+  },
+  "engines": {
+    "parcel": "2.x"
+  }
+}
